@@ -1,0 +1,165 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2dd5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2dd5.dir/build.make CMakeFiles/cmTC_f2dd5.dir/build
+make[1]: Entering directory '/home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2dd5.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f2dd5.dir/CheckSymbolExists.c.o   -c /home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f2dd5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2dd5.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f2dd5.dir/CheckSymbolExists.c.o  -o cmTC_f2dd5 -rdynamic 
+CMakeFiles/cmTC_f2dd5.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f2dd5.dir/build.make:97: recipe for target 'cmTC_f2dd5' failed
+make[1]: *** [cmTC_f2dd5] Error 1
+make[1]: Leaving directory '/home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f2dd5/fast' failed
+make: *** [cmTC_f2dd5/fast] Error 2
+
+File /home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20015/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20015.dir/build.make CMakeFiles/cmTC_20015.dir/build
+make[1]: Entering directory '/home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20015.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_20015.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_20015
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20015.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_20015.dir/CheckFunctionExists.c.o  -o cmTC_20015 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_20015.dir/build.make:97: recipe for target 'cmTC_20015' failed
+make[1]: *** [cmTC_20015] Error 1
+make[1]: Leaving directory '/home/hasithr/Documents/opencv_test/pointcloud/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_20015/fast' failed
+make: *** [cmTC_20015/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a87c0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a87c0.dir/build.make CMakeFiles/cmTC_a87c0.dir/build
+make[1]: Entering directory '/home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a87c0.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a87c0.dir/CheckSymbolExists.c.o   -c /home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a87c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a87c0.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a87c0.dir/CheckSymbolExists.c.o  -o cmTC_a87c0 -rdynamic 
+CMakeFiles/cmTC_a87c0.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a87c0.dir/build.make:97: recipe for target 'cmTC_a87c0' failed
+make[1]: *** [cmTC_a87c0] Error 1
+make[1]: Leaving directory '/home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a87c0/fast' failed
+make: *** [cmTC_a87c0/fast] Error 2
+
+File /home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4db54/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4db54.dir/build.make CMakeFiles/cmTC_4db54.dir/build
+make[1]: Entering directory '/home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4db54.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4db54.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4db54
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4db54.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4db54.dir/CheckFunctionExists.c.o  -o cmTC_4db54 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4db54.dir/build.make:97: recipe for target 'cmTC_4db54' failed
+make[1]: *** [cmTC_4db54] Error 1
+make[1]: Leaving directory '/home/hasithr/targetless_lidar_camera_calibration/pointcloud/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4db54/fast' failed
+make: *** [cmTC_4db54/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8f908/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8f908.dir/build.make CMakeFiles/cmTC_8f908.dir/build
+make[1]: Entering directory '/home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f908.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_8f908.dir/CheckSymbolExists.c.o   -c /home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8f908
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f908.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_8f908.dir/CheckSymbolExists.c.o  -o cmTC_8f908 -rdynamic 
+CMakeFiles/cmTC_8f908.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8f908.dir/build.make:97: recipe for target 'cmTC_8f908' failed
+make[1]: *** [cmTC_8f908] Error 1
+make[1]: Leaving directory '/home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8f908/fast' failed
+make: *** [cmTC_8f908/fast] Error 2
+
+File /home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_be507/fast"
+/usr/bin/make -f CMakeFiles/cmTC_be507.dir/build.make CMakeFiles/cmTC_be507.dir/build
+make[1]: Entering directory '/home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_be507.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_be507.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_be507
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be507.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_be507.dir/CheckFunctionExists.c.o  -o cmTC_be507 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_be507.dir/build.make:97: recipe for target 'cmTC_be507' failed
+make[1]: *** [cmTC_be507] Error 1
+make[1]: Leaving directory '/home/hasithr/targetless_lidar_camera_calibration/projection/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_be507/fast' failed
+make: *** [cmTC_be507/fast] Error 2
+
+
