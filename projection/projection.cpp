@@ -60,7 +60,7 @@ int main(int argc, char **argv)
     PointCloud::Ptr cloud(new PointCloud);
     
     if (pcl::io::loadPCDFile<pcl::PointXYZ>
-            ("lidar_scan_0.pcd", *cloud) == -1)
+            ("../data/lidar_scan_0.pcd", *cloud) == -1)
     {
         cout << "no pointcloud data" << endl;
         return -1;
