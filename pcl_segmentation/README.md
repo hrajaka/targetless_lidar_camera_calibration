@@ -4,6 +4,9 @@
 using ML-based segmentation
 **
 
+## Matlab file
+the pclsegmentation.m file implements a similar K-means algorithm(the distance to cluster's mean is parameter instead of number of clusters) for pcl points. However, the quality of result is largely depent on the selection of distance parameter, and it always tends to group things near the lidar together. Maybe another similarity metrics could be tried instead of Euclidean distance but I found another algorithm that generally does a better job. See below.
+
 ## Explaination
 matlab does not support point cloud processing that well so this LiDAR segmentation is done in C++ using open source Point Cloud Library(pcl). Therefore this code requires at least PCL1.5 to run.
 Refer: http://pointclouds.org/
