@@ -2,11 +2,11 @@
 from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 from keras.optimizers import adam
 
-from src.Datagen import DataSequence
+from src.preprocess import DataSequence
 from src.backend import ENET, VGG, UNET
 from keras import callbacks
 
-class Segment(object):
+class Model(object):
     def __init__(self, backend,
                  input_size, nb_classes):
         self.input_size = input_size

@@ -14,7 +14,7 @@ demo.ipynb : test the model on testing images.
 config.json : configurations and selections of architecture of the models, and training hyperparameters.
 src / backend.py : where models are built.
       frontend.py : preparation of keras training.
-      Datagen.py : data preprocessing and augmentation.
+      preprocess.py : data preprocessing and augmentation.
 
 ## Dependencies
       Opencv, imgaug, keras    They can be install using pip install 'names'.

@@ -4,7 +4,7 @@ import argparse
 import json
 import os
 
-from src.frontend import Segment
+from src.frontend import Model
 
 argparser = argparse.ArgumentParser(
     description='Train and validate Kitti Road Segmentation Model')
@@ -38,8 +38,8 @@ def _main_(args):
     data_dir = config["train"]["data_directory"]
 
     # define the model and train
-    segment = Segment(backend, input_size, classes)
-    segment.train(config["train"])
+    model = Model(backend, input_size, classes)
+    model.train(config["train"])
 
 
 if __name__ == '__main__':
