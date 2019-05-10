@@ -4,6 +4,15 @@
 using ML-based segmentation
 **
 
+download data at `http://www.cvlibs.net/download.php?file=data_object_velodyne.zip`
+
+kitti2pcl folder : tool described below
+lidar_seg.cpp : Region Growing clustering on pcd
+pclsegmentation.m : K-means clustering on pcd
+
+## Kitti2pcl
+KITTI dataset provides pcl data in bin format and there is a kitti2pcl folder where you can run `cmake` followed by `make` to build a tool to convert bin to standard pcl format. After making, run ./velo2pcd --folder DIR_TO_KITTIDATASET.
+
 ## Matlab file
 the pclsegmentation.m file implements a similar K-means algorithm(the distance to cluster's mean is parameter instead of number of clusters) for pcl points. However, the quality of result is largely depent on the selection of distance parameter, and it always tends to group things near the lidar together. Maybe another similarity metrics could be tried instead of Euclidean distance but I found another algorithm that generally does a better job. See below.
 
@@ -17,6 +26,10 @@ See complete comments in the codes for detailed implementation.
 
 ## Complilation
 The code can be compiled by running `cmake` followed by `make`.
+
+## Results
+By running the codes, the outputs in the results can be reproduced.
+Don't forget to download the data and put the unzipped training and testing or modify the path in corresponding places.
 
 ##Use
 ```
